@@ -17,11 +17,18 @@ module.exports = class Server {
     this.app = express()
     this.app.use(cors())
     this.app.use(express.json())
+    this.app.get('/', this.handleGet.bind(this))
     this.app.post('/', this.handleIncoming.bind(this))
     this.app.listen(this.port, () => {
       log(
         chalk`{blueBright Server listening on port {magenta ${this.port}}}`
       )
+    })
+  }
+
+  handleGet(req, res) {
+    res.json({
+      status: 'ok'
     })
   }
 
