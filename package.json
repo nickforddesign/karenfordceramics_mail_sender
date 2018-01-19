@@ -1,0 +1,32 @@
+{
+  "name": "karen_mail_server",
+  "version": "1.0.0",
+  "description": "Simple server to send emails for karenfordceramics.com",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickforddesign/karenfordceramics_mail_sender.git"
+  },
+  "author": "Nick Ford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickforddesign/karenfordceramics_mail_sender/issues"
+  },
+  "homepage": "https://github.com/nickforddesign/karenfordceramics_mail_sender#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "cors": "^2.8.4",
+    "sendmail": "^1.2.0"
+  }
+}
